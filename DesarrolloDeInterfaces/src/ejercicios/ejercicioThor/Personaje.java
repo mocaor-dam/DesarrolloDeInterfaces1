@@ -24,4 +24,8 @@ public class Personaje {
     public void setFuerza(int fuerza) {
         this.fuerza = fuerza;
     }
+
+    public double lanzar(Objeto objeto){
+        return (double) (this.altura*this.fuerza)/ objeto.getPeso();
+    }
 }
